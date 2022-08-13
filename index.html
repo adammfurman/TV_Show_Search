@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Lookup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <h1 class="title is-1">TV Show Lookup</h1>
+                    <h1 class="subtitle is-5 is-centered">Find shows by looking up their title.</h2>
+                        <form class="control" id="searchForm">
+                            <input class="input is-rounded is-inline" type="text" placeholder="TV show title"
+                                name="query" id="input-el">
+                            <button class="button is-primary">Search</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="resultsHelper"></div>
+            <div class="columns" id="resultsContainer">
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="footer has-text-centered">If you see this pls hire me. tanks.</footer> -->
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
